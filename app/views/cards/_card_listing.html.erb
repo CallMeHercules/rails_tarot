@@ -1,0 +1,10 @@
+<!-- app/views/cards/_card_listing.html.erb -->
+<h1>Cards</h1>
+<div class="CardContainer">
+  <% @cards.each do |card| %>
+    <div class="Card">
+      <h2><%= card['name'] %></h2>
+      <p><%= card['meaning_rev'] %></p>
+    </div>
+  <% end %>
+</div>
